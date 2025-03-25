@@ -1,0 +1,17 @@
+<!-- filepath: c:\Users\navne\Desktop\backend\wanderlust\views\listings\index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listings</title>
+</head>
+<body>
+  <h1>All Listings</h1>
+  <ul>
+    <% allListings.forEach(listing => { %>
+      <li><%= listing.title %> - <%= listing.location %></li>
+    <% }) %>
+  </ul>
+</body>
+</html>
